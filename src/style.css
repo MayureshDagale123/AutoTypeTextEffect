@@ -1,0 +1,6 @@
+
+span::after{
+    content: '|';
+    position: relative;
+    bottom: 3px;
+}
