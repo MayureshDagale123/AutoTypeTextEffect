@@ -32,7 +32,6 @@ function App(){
             
         }, 200 );
 
-        console.log(alphabet, reverse, wordIndex);
         return()=>{
             clearInterval(intervalId);
         };
@@ -40,7 +39,7 @@ function App(){
 
     return(
     <>
-        <h1>I am a <span>{proffessions[(wordIndex===proffessions.length)?0:wordIndex].slice(0, (alphabet===-1)?0:alphabet)}</span></h1>
+        <h1>I am a <span className="theme" id="changing">{proffessions[(wordIndex===proffessions.length)?0:wordIndex].slice(0, (alphabet===-1)?0:alphabet)}</span></h1>
     </>
     );
 }
